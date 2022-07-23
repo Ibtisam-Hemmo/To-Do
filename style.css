@@ -57,6 +57,9 @@ a.btn-start:hover{
     border-radius: 12px;
 }
 
+form{
+    background-color: #d7c5c9;
+}
 .container input[type="text"]{
     padding: 19px;
     width: 70%;
@@ -65,13 +68,13 @@ a.btn-start:hover{
     box-shadow: #a784fe;
 }
 
-.btn-add{
+#btn-add{
     padding: 19px;
     border: none;
     border-radius: 5px;
 }
 
-.btn-add:hover{
+#btn-add:hover{
     background-color:  #b9a5aa;
     box-shadow: 0 6.5px 22.5px 0 rgba(3, 17, 24, 0.502);
     transform: scale(1.1);
@@ -79,12 +82,46 @@ a.btn-start:hover{
     cursor: pointer;
 }
 
-.list-con{
+.todo-con{
     padding: 20px;
-    height: 50%;
+    height:  fit-content;
     width: 84%;
     margin-top: 25px;
     border-radius: 12px;
     text-align: center;
     color: #292727;
 }
+
+ul{
+    list-style: none;
+    text-align: left;
+}
+
+.item {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 1.1rem;
+    margin: 5px;
+    border-radius:2px;
+}
+
+/* item style end */
+.checkbox {
+    margin-right: 10px;
+}
+.btn-delete {
+    float: right;
+    background-color: #dc143c;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    padding: 2px 10px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 550;
+    margin-bottom:2px;
+}
+/* applied when the todo item is checked */
+.checked { 
+    text-decoration: line-through;
+} 
